@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../bus-management-service"
+		},
+		{
+			"path": "../vinahome"
+		}
+	]
+}

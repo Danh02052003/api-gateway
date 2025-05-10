@@ -7,8 +7,16 @@ export class TripController {
 
   @Post('/search')
   seachTripOnPlatform(@Body() data: any) {
+    console.log('Search Trip API called with data:', data);
     return this.tripService.seachTripOnPlatform(data);
   }
+  
+  @Post('/search-connected')
+  findConnectedTrips(@Body() data: any) {
+    console.log('Search Connected Trips API called with detailed data:', JSON.stringify(data));
+    return this.tripService.findConnectedTrips(data);
+  }
+  
   @Get('/get-trip-detail-on-platform/:id')
   getTripDetailOnPlatform(@Param('id') id: any) {
     return this.tripService.getTripDetailOnPlatform(id);
